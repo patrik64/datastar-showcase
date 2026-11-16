@@ -91,3 +91,7 @@ app.onError((error, c) => {
   console.error(error);
   return c.text('Internal Server Error', 500);
 });
+
+// Vercel runs the app from this file's default export. Locally, src/server.ts
+// starts it on a port instead.
+export default app;

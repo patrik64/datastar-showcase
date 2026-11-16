@@ -4,6 +4,9 @@
     "module": "nodenext",
     "lib": ["esnext"],
     "types": ["node"],
+    // Vercel type-checks through a temporary tsconfig that extends this one
+    // from outside the project, so say where "node" above is to be found.
+    "typeRoots": ["./node_modules/@types"],
     "strict": true,
     "noEmit": true,
     "skipLibCheck": true,
