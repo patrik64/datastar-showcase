@@ -1,0 +1,34 @@
+{
+  "name": "datastar-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A hands-on tour of the Datastar hypermedia framework: ten small demos, one Node server, no build step.",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.ts",
+    "start": "node src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.21.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.21.0",
+  "dependencies": {
+    "@hono/node-server": "^2.1.8",
+    "@starfederation/datastar-sdk": "^1.0.0",
+    "hono": "^4.13.18",
+    "shiki": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
